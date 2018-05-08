@@ -1,0 +1,40 @@
+.title-categories-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: center;
+  height: 100vh;
+  background-color: #a01a1a
+}
+
+.title {
+  font-size: 40px;
+  color: #ffff00;
+}
+
+.category-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 295px;
+  height: 70px;
+  background-color: #000000c9;
+  color: #0ae6e9;
+  font-size: 20px;
+  transition: 0.1s; 
+  padding-left: 5px;
+}
+
+.people,
+.vehicle,
+.planet{
+  border-bottom: solid 2px rgb(40, 40, 40);
+}
+
+.selected-category,
+.category-button:hover {
+  background-color: #000000a8;
+  border-right: 5px solid #1daac9;
+  cursor: pointer;
+  padding-left: 0px;
+}
