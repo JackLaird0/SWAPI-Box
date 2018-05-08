@@ -1,0 +1,5 @@
+.scroll-categories-container {
+  display: grid;
+  grid-template-rows: 200px 1fr;
+  height: 100vh;
+}
