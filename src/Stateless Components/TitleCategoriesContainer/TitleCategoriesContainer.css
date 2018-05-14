@@ -27,7 +27,8 @@
 
 .people,
 .vehicle,
-.planet{
+.planets,
+.favorites{
   border-bottom: solid 2px rgb(40, 40, 40);
 }
 
