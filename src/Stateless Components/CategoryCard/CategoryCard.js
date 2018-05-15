@@ -1,5 +1,6 @@
 import React from 'react';
-import './CategoryCard.css'
+import './CategoryCard.css';
+import PropTypes from 'prop-types'
 
 const CategoryCard = (props) => {
   if (props.selectedCategory === 'vehicles') {
@@ -47,6 +48,21 @@ const CategoryCard = (props) => {
       </div>
     )
   }
+}
+
+CategoryCard.propTypes = {
+  selectedCategory: PropTypes.string,
+  name: PropTypes.string,
+  saveFavorite: PropTypes.func,
+  model: PropTypes.string,
+  class: PropTypes.string,
+  passengers: PropTypes.string,
+  residents: PropTypes.array,
+  population: PropTypes.number,
+  terrain: PropTypes.string,
+  climate: PropTypes.string,
+  species: PropTypes.string,
+  planet: PropTypes.string
 }
 
 export default CategoryCard;
