@@ -22,7 +22,7 @@ describe('App tests', () => {
     expect(appComponent.state('favorites')).toEqual([])
   })
 
-  it('Should to the favorites state when a favorite is saved', () => {
+  it('Should add to the favorites state when a favorite is saved', () => {
     const appComponent = shallow(<App />, {disableLifecycleMethods: true})
     const favoriteData = {hey: 'hello'}
     appComponent.instance().saveFavorites(favoriteData)

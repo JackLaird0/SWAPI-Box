@@ -1,5 +1,6 @@
 import React from 'react';
-import './TitleCategoriesContainer.css'
+import './TitleCategoriesContainer.css';
+import PropTypes from 'prop-types';
 
 const TitleCategoriesContainer = (props) => {
 
@@ -17,5 +18,12 @@ const TitleCategoriesContainer = (props) => {
     </div>
   )
 }
+
+TitleCategoriesContainer.propTypes = {
+      selectPeople: PropTypes.func.isRequired,
+      selectVehicle: PropTypes.func.isRequired,
+      selectPlanets: PropTypes.func.isRequired,
+      selectFavorites: PropTypes.func.isRequired
+    };
 
 export default TitleCategoriesContainer
